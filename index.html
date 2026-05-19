@@ -1,36 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Ingarö Summer House</title>
+    <title>Ingarö Summer House – Gästguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background: #f5f5f5;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+            background: #f7f7f7;
+            color: #333;
         }
-        .container {
-            max-width: 700px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        header {
+            background: #2c3e50;
+            padding: 70px 20px;
+            text-align: center;
+            color: white;
         }
-        h1 {
-            color: #2c3e50;
+        header h1 {
+            font-size: 42px;
+            margin: 0;
         }
-        p {
+        header p {
             font-size: 18px;
-            line-height: 1.6;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        nav {
+            background: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #ddd;
+            z-index: 10;
+        }
+        nav a {
+            margin-right: 18px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+        .section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .section h2 {
+            font-size: 26px;
+            border-left: 4px solid #2c3e50;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        ul {
+            line-height: 1.7;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Welcome to Ingarö Summer House</h1>
-        <p>This is a simple homepage hosted with GitHub Pages.</p>
-        <p>You can add photos, project info, or links here.</p>
+
+<header>
+    <h1>Ingarö Summer House</h1>
+    <p>Din guide till en avkopplande vistelse i Stockholms skärgård</p>
+</header>
+
+<nav>
+    <a href="#travel">Resa hit</a>
+    <a href="#access">Nycklar</a>
+    <a href="#internet">Internet & TV</a>
+    <a href="#garden">El & Trädgård</a>
+    <a href="#recycling">Återvinning</a>
+    <a href="#bbq">Grill</a>
+    <a href="#laundry">Tvätt</a>
+    <a href="#power">Strömavbrott</a>
+    <a href="#sup">SUP</a>
+    <a href="#bikes">Cyklar</a>
+    <a href="#fireplace">Kamin</a>
+    <a href="#explore">Utflykter</a>
+</nav>
+
+<div class="section" id="travel">
+    <h2>🚗🚌 Hur du tar dig hit</h2>
+    <div class="card">
+        <p>Adress: <strong>Lagerbäcksvägen 11, Ingarö</strong></p>
+        <p><strong>Med bil:</strong> ca 35 minuter från Stockholm. Parkering finns vid huset.</p>
+        <p><strong>Med buss:</strong> Ta buss 429X från Slussen → gå av vid Fåruddsvägen → 5 min promenad.</p>
     </div>
+</div>
+
+<div class="section" id="access">
+    <h2>🔑 Access till huset</h2>
+    <div class="card">
+        <p>Vid ingången finns en nyckelbox med kod. Inne i köket finns en andra nyckelbox med full uppsättning nycklar till:</p>
+        <ul>
+            <li>Gästhus</li>
+            <li>Källare</li>
+            <li>Förråd</li>
+            <li>Internet & TV‑utrustning</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section" id="internet">
+    <h2>📺🎵 Internet, TV & Musik</h2>
+    <div class="card">
+        <p>I skåpet ovanför kylen hittar du:</p>
+        <ul>
+            <li>D‑Link router</li>
+            <li>NVIDIA Shield TV</li>
+        </ul>
+        <p><strong>TV:</strong> Använd HDMI 3</p>
+        <p><strong>Ljud:</strong> Soundbar via HDMI 1</p>
+        <p><strong>Fjärrkontroller:</strong> Shield‑fjärr + Samsung TV‑fjärr</p>
+    </div>
+</div>
+
+<div class="section" id="garden">
+    <h2>💡🔌 El & Trädgård</h2>
+    <div class="card">
+        <ul>
+            <li>Knapp 1 – Ljus vid brunnen</li>
+            <li>Knapp 2 – Trädgårdsbelysning</li>
+            <li>Knapp 3 – Eluttag i trädgården</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section" id="recycling">
+    <h2>♻️🗑️ Återvinning</h2>
+    <div class="card">
+        <ul>
+            <li><strong>Hushållsavfall:</strong> Använd den vänstra tunnan (närmast trädet).</li>
+            <li><strong>Papper & plast:</strong> I växthuset finns två vita kärl.</li>
+            <li><strong>Glas & metall:</strong> I två aluminiumkärl utanför växthuset.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section" id="bbq">
+    <h2>🍖🔥 Grill</h2>
+    <div class="card">
+        <ul>
+            <li>Ta av skyddet</li>
+            <li>Öppna gasventilen</li>
+            <li>Använd tändknappen</li>
+            <li>Justera värme med 5 reglage</li>
+        </ul>
+        <p><strong>Viktigt:</strong> Stäng alltid gasen efter användning.</p>
+    </div>
+</div>
+
+<div class="section" id="laundry">
+    <h2>🧺 Tvätt</h2>
+    <div class="card">
+        <p>Kombinerad tvättmaskin/torktumlare i källaren.</p>
+        <p>Välj program → fyll på tvättmedel → överlasta inte.</p>
+    </div>
+</div>
+
+<div class="section" id="power">
+    <h2>⚡ Strömavbrott</h2>
+    <div class="card">
+        <p>Automatsäkringar finns i källaren. Om en säkring slagit av – tryck upp den igen.</p>
+    </div>
+</div>
+
+<div class="section" id="sup">
+    <h2>🏄‍♂️ SUP‑brädor</h2>
+    <div class="card">
+        <p>2 SUP‑brädor i källaren. Pumpa upp till rekommenderat tryck. Flytvästar finns.</p>
+    </div>
+</div>
+
+<div class="section" id="bikes">
+    <h2>🚲 Cyklar</h2>
+    <div class="card">
+        <p>4 cyklar i olika storlekar. Kontrollera bromsar & däck innan användning.</p>
+    </div>
+</div>
+
+<div class="section" id="fireplace">
+    <h2>🔥 Kamin</h2>
+    <div class="card">
+        <ul>
+            <li>Ved finns i vedförrådet</li>
+            <li>Öppna luftintag</li>
+            <li>Tänd försiktigt</li>
+            <li>Stäng glasdörren</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section" id="explore">
+    <h2>🗺️🌊 Utforska området</h2>
+    <div class="card">
+        <ul>
+            <li>Badplatser: Stora Sandarna, Lilla Sandarna, Björkviks strand</li>
+            <li>Restaurang: Björkvik Bistro</li>
+            <li>SUP, kajak, cykling, vandring</li>
+            <li>Björkvik Nationalpark</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    © 2026 Ingarö Summer House Guide
+</footer>
+
 </body>
 </html>
