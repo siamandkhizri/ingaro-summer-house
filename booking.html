@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boka Ingarö Sommarhus</title>
+    <title>Boka Ingarö Summer House</title>
 
-    <!-- Minimalistisk skandinavisk stil -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,11 +36,10 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
-        /* FIX: iframe ska fylla hela bredden och ha rätt höjd */
-        iframe {
+        /* Widgeten fyller automatiskt höjden */
+        #sb_widget {
             width: 100%;
             min-height: 900px;
-            border: none;
         }
 
         footer {
@@ -61,19 +59,34 @@
 <body>
 
 <header>
-    <h1>Boka Ingarö Sommarhus</h1>
+    <h1>Boka Ingarö Summer House</h1>
 </header>
 
 <div class="container">
-    <p>Här kan du se lediga datum och skicka en bokningsförfrågan direkt via vårt bokningssystem.</p>
+    <p>Här kan du se lediga datum och skicka en bokningsförfrågan.</p>
 
-    <!-- ⭐ FIX: Riktig SimplyBook iframe ⭐ -->
-   <iframe
-  src="https://siakesingarosummerhouse.secure.simplybook.me/v2/#book"
-  style="width:100%; height:900px; border:none;"
-  allowfullscreen>
-</iframe>
+    <!-- ⭐ SimplyBook Widget ⭐ -->
+    <div id="sb_widget"></div>
 
+    <script src="https://widget.simplybook.me/v2/widget/widget.js"></script>
+    <script>
+        var widget = new SimplybookWidget({
+            widget_type: "iframe",
+            url: "https://siakesingarosummerhouse.simplybook.me",
+            theme: "default",
+            theme_settings: {
+                timeline_hide_unavailable: "1",
+                hide_past_days: "0"
+            },
+            timeline: "modern",
+            datepicker: "top_calendar",
+            is_rtl: false,
+            app_config: {
+                allow_switch_to_ada: 0,
+                predefined: []
+            }
+        });
+    </script>
 
     <p>När du skickar en förfrågan får vi ett mail och bekräftar manuellt.</p>
 </div>
@@ -84,4 +97,3 @@
 
 </body>
 </html>
-
