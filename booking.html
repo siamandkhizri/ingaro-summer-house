@@ -32,9 +32,10 @@
             padding: 0 15px;
         }
 
-        #sb_widget {
+        iframe {
             width: 100%;
-            min-height: 900px;
+            height: 800px;
+            border: 0;
         }
 
         footer {
@@ -57,24 +58,10 @@
 </header>
 
 <div class="wrapper">
-    <div id="sb_widget"></div>
+    <!-- Google Calendar -->
+    <iframe 
+<iframe src="https://calendar.google.com/calendar/embed?src=6334a36dfa00292298199cdef2bd5c3f8891ed3246c6a565c9b7a59256ee026f%40group.calendar.google.com&ctz=Europe%2FStockholm" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>    </iframe>
 </div>
-
-<script src="https://widget.simplybook.me/v2/widget/widget.js"></script>
-<script>
-    new SimplybookWidget({
-        widget_type: "iframe",
-        url: "https://siakesingarosummerhouse.simplybook.me",
-        theme: "default",
-        theme_settings: {
-            timeline_hide_unavailable: "1",
-            hide_past_days: "0"
-        },
-        timeline: "modern",
-        datepicker: "top_calendar",
-        is_rtl: false
-    });
-</script>
 
 <footer>
     <p><a href="index.html">← Tillbaka till startsidan</a></p>
